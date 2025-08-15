@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #f8f9fa; }
+        .menu-card img { height: 200px; object-fit: cover; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Dapur Mae</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="pesan.html">Pesan</a></li>
+        <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Konten -->
+<div class="container py-5">
+    <h1 class="text-center mb-4">Daftar Menu</h1>
+    <div class="row g-4">
+
+        <!-- Card Menu -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalNasiGoreng">
+                <img src="nasi goreng.jpeg" class="card-img-top" alt="Nasi Goreng">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nasi Goreng</h5>
+                    <p class="text-success fw-bold">Rp 15.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalMieGoreng">
+                <img src="mie goreng.jpeg" class="card-img-top" alt="Mie Goreng">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mie Goreng</h5>
+                    <p class="text-success fw-bold">Rp 12.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalAyamBakar">
+                <img src="ayam bakar.jpeg" class="card-img-top" alt="Ayam Bakar">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Ayam Bakar</h5>
+                    <p class="text-success fw-bold">Rp 20.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalSateAyam">
+                <img src="sate.jpeg" class="card-img-top" alt="Sate Ayam">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Sate Ayam</h5>
+                    <p class="text-success fw-bold">Rp 25.000</p>
+                </div>
+            </div>
+        </div>
+                <div class="col-md-3 col-sm-6">
+            <div class="card menu-card shadow-sm" data-bs-toggle="modal" data-bs-target="#modalMieAyam">
+                <img src="mie ayam.jpeg" class="card-img-top" alt="Mie Ayam">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Mie Ayam</h5>
+                    <p class="text-success fw-bold">Rp 25.000</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Nasi Goreng -->
+<div class="modal fade" id="modalNasiGoreng" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="nasi goreng.jpeg" class="img-fluid" alt="Nasi Goreng">
+      <div class="modal-body">
+        <h5>Nasi Goreng</h5>
+        <p>Lezat dengan bumbu khas dan topping telur. Cocok untuk sarapan atau makan malam.</p>
+        <p class="fw-bold text-success">Rp 15.000</p>
+        <a href="pesan.html?menu=Nasi%20Goreng" class="btn btn-success w-100">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Mie Goreng -->
+<div class="modal fade" id="modalMieGoreng" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="mie goreng.jpeg" class="img-fluid" alt="Mie Goreng">
+      <div class="modal-body">
+        <h5>Mie Goreng</h5>
+        <p>Mie goreng spesial dengan campuran sayuran segar dan bumbu rahasia.</p>
+        <p class="fw-bold text-success">Rp 12.000</p>
+        <a href="pesan.html?menu=Mie%20Goreng" class="btn btn-success w-100">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Ayam Bakar -->
+<div class="modal fade" id="modalAyamBakar" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="ayam bakar.jpeg" class="img-fluid" alt="Ayam Bakar">
+      <div class="modal-body">
+        <h5>Ayam Bakar</h5>
+        <p>Ayam bakar bumbu manis pedas, dibakar sempurna hingga harum.</p>
+        <p class="fw-bold text-success">Rp 20.000</p>
+        <a href="pesan.html?menu=Ayam%20Bakar" class="btn btn-success w-100">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Sate Ayam -->
+<div class="modal fade" id="modalSateAyam" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="sate.jpeg" class="img-fluid" alt="Sate Ayam">
+      <div class="modal-body">
+        <h5>Sate Ayam</h5>
+        <p>Sate ayam empuk dengan bumbu kacang gurih, disajikan dengan lontong.</p>
+        <p class="fw-bold text-success">Rp 25.000</p>
+        <a href="pesan.html?menu=Sate%20Ayam" class="btn btn-success w-100">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal mie ayam -->
+<div class="modal fade" id="modalMieAyam" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <img src="mie ayam.jpeg" class="img-fluid" alt="Mie Ayam">
+      <div class="modal-body">
+        <h5>Mie Ayam</h5>
+        <p>mie ayam dengan topping ayam khas mongolia yang di produksi di tanjung verde dan mie kenyal yang di impor langsung dari selat gibraltar</p>
+        <p class="fw-bold text-success">Rp 25.000</p>
+        <a href="pesan.html?menu=Sate%20Ayam" class="btn btn-success w-100">Beli Sekarang</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
